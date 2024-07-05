@@ -1,0 +1,131 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: "poppins",sans-serif;
+}
+
+header{
+    position: relative;
+    width: 100%;
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+}
+
+
+ul li {
+    display: inline;
+    margin-right: 5rem;
+    text-decoration: none;
+}
+ul li :link{
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
+    
+}
+
+ul li :visited{
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
+}
+ul li :hover{
+    color: Blue;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+div.content{
+    display:flex;
+    justify-content:space-around;
+    align-content: center;
+    position: relative;
+    width: 100%;
+    position: relative;
+    width: 100%;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+img.car{
+    transform: scale(1.0);
+    max-width: 15cm;
+    max-height: 15cm;
+    transform: translate(20px,150px);
+    z-index:3;
+
+}
+div.textbox{
+    margin-left: 2cm;
+    transform: translateY(150px);
+    max-width: 15cm;
+}
+h2{
+  font-size: 3em;
+
+
+}
+
+.button{
+    display: inline-block;
+    padding: 10px 40px;
+    margin-top: 20px;
+    background-color: #1743e3;
+    border-radius: 30px;
+    border-top-right-radius: 0px;
+    color: white;
+    cursor: pointer;
+    transition:0.3s;
+}
+
+.button:hover{
+   
+    border-top-right-radius: 30px;
+
+
+}
+
+
+div.Nahla{
+    transform: rotate(45deg);
+}
+div.Nahla{
+
+position: absolute;
+right:100px;
+top:100px;
+height:400px;
+width:400px;
+border:25px solid #1743e3;
+z-index:2;
+
+}
+
+div.big{
+    position:absolute;
+    width: 700px;
+    height: 700px;
+    background-color: #1743e3;
+    top: -25%;
+    right: -25%;
+    transform: rotate(45deg);
+    z-index:1;
+}
+
+.anim{
+    opacity: 0;
+    transform:translateY(100px);
+    animation:moveup 0.5s linear forwards;
+}
+@keyframes moveup{
+    100%{
+    opacity: 1;
+    transform:translateY(0px);
+}
+}
